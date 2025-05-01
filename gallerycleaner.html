@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Add syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- Custom styles for code display -->
+  <style>
+    .code-container {
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+
+    .code-tabs {
+      display: flex;
+      background-color: #333;
+    }
+
+    .code-tab {
+      padding: 10px 15px;
+      color: #ccc;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+    }
+
+    .code-tab.active {
+      background-color: #1e1e1e;
+      color: white;
+      border-bottom: 2px solid #4285f4;
+    }
+
+    .code-content {
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .code-content.active {
+      display: block;
+    }
+
+    pre {
+      margin: 0;
+      padding: 15px;
+      background-color: #1e1e1e;
+      border-radius: 0;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+      font-size: 14px;
+    }
+
+    .system-overview {
+      margin-bottom: 30px;
+    }
+
+    .tech-badge {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px;
+      background-color: #0078d7;
+      color: white;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    /* Fix for large gap between content and footer */
+    .section-container {
+      padding-bottom: 20px !important;
+      /* Override default padding */
+    }
+
+    /* Image Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: auto;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-content {
+      display: block;
+      position: relative;
+      margin: auto;
+      max-width: 90%;
+      max-height: 90vh;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+      z-index: 1001;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .zoomable {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .zoomable:hover {
+      transform: scale(1.02);
+    }
+  </style>
+
+  <title>Works - Gallery Cleaner</title>
+
+  <link href="./main.3f6952e4.css" rel="stylesheet">
+</head>
+
+<body class="">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <!-- Add your content of header -->
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="./index.html" title="">Home</a></li>
+            <li><a href="./works.html" title="">Works</a></li>
+            <li><a href="./about.html" title="">About me</a></li>
+            <li><a href="./contact.html" title="">Contact</a></li>
+            <!-- <li><a href="./components.html" title="">Components</a></li> -->
+          </ul>
+
+
+          <!-- <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a href="./index.html" title="" class="active">001</a></li>
+            <li><a href="./index.html" title="">002</a></li>
+            <li><a href="./index.html" title="">003</a></li>
+            <li><a href="./index.html" title="">004</a></li>
+            <li><a href="./index.html" title="">005</a></li>
+            <li><a href="./index.html" title="">006</a></li>
+          </ul> -->
+
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="./assets/images/work001-01.jpg" class="img-responsive" alt="">
+          <div class="card-container">
+            <div class="text-center">
+              <h1 class="h2">003 : Gallery Cleaner</h1>
+            </div>
+            <p>An app that groups images in a folder using transfer learned ResNet-50 model image classifier.</p>
+            <h3>Overview</h3>
+            <p>
+              <strong>Managing an overcrowded gallery folder can be exhausting</strong>, especially when sorting through numerous unwanted photos. Consider this scenario: <br><br>
+
+              <em>"Mr. Joni, a businessman, frequently communicates with customers via WhatsApp, regularly exchanging both digital or printed bank payment receipts. Over time, these receipts have accumulated significantly, consuming his storage space. Payment receipts from three years ago are no longer relevant, yet Mr. Joni must now navigate through thousands of images in his "WhatsApp Image" folder to clear space."</em>
+              <br><br>
+              <strong>Gallery Cleaner addresses challenges like Mr. Joni's</strong> by intelligently categorizing images within a folder into five distinct categories:
+              <ul>
+              <li><code>receipt</code></li>
+              <li><code>screenshot</code></li>
+              <li><code>people</code></li>
+              <li><code>food</code></li>
+              <li><code>landscape</code></li>
+              </ul>
+              The classification is powered by a <strong>transfer-learned ResNet-50 model</strong>, which I trained using hundreds of thousands of images sourced through the Kaggle API.
+            </p>
+            
+            <div class="system-overview">
+              <h3>Technology Stack</h3>
+              <div>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">TensorFlow</span>
+                <span class="tech-badge">Keras</span>
+                <span class="tech-badge">NumPy</span>
+                <span class="tech-badge">Matplotlib</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">ImageDataGenerator</span>
+                <span class="tech-badge">ResNet-50</span>
+                <span class="tech-badge">Tkinter</span>
+                <span class="tech-badge">PyInstaller</span>
+              </div>
+            </div>
+            <div class="system-overview">
+              <h3>The Training</h3>
+              <p>
+                The training process is done inside my campus' (Petra Christian University) accelerator. We call the server "gpu3". The server is powered by AMD Instinct MI120, a powerful GPU. Although it is strong, the AMD GPUs require additional configuration to work with TensorFlow. This is where <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/ROCm_logo.png" alt="ROCm" style="height: 2em; width: auto; vertical-align: middle; display: inline-block; margin: 0 3px;"> comes into play. I had to install ROCm and document the process, since TensorFlow had never been used before on this server. I faced many problems related to version dependencies. In the end, I contributed to the campus server by publishing the documentation, so that other students can use TensorFlow with the GPU in the server.<br><br>
+
+                <h4>Data Preparation</h4>
+                First, I prepared the datasets for each of the 5 classes. I searched through Kaggle and took around 7 different dataset resources. Next, I downloaded it with Kaggle API. The accumulated datasets consist of around 20.000 images for all 5 classes. The data are further splitted into train and validation datasets with 1:9 ratio.<br><br>
+
+                <h4>Model Declaration</h4>
+                As mentioned before, the system uses unfrozen transfer-learned Resnet50. I decided to use Resnet-50 since is a widely used model, and the unfrozen transfer-learned type achieves highest accuracy. But, before I reached the conclusion, I have experimented 2 different model type:
+                <ol>
+                  <li>
+                    <h5>Resnet50 from Scratch</h5>
+                    <p>This approach adopts only the ResNet-50 architecture with randomly initialized weights rather than pre-trained values. As expected, <strong>this model required significantly more training time to converge and struggled to reach high accuracy</strong>, ultimately achieving only about 75% validation accuracy. I realized that I needed another approach, this is when I met the transfer learning method.</p> 
+                  </li>
+                  <li>
+                    <h5>Transfer-learned Frozen Resnet50</h5>
+                    
+                    <p>I discovered that I could leverage a <strong>pre-trained ResNet50 model from ImageNet</strong> thanks to this excellent Kaggle resource: <a href="https://www.kaggle.com/code/gpreda/cats-or-dogs-using-cnn-with-transfer-learning">Cats or Dogs - using CNN with Transfer Learning</a>.</p>
+                    
+                    <p>In this implementation, Gabriel Preda successfully trained a model with:</p>
+                    <ul>
+                      <li><strong>Frozen pre-trained ResNet50 layers</strong> (preserving ImageNet knowledge)</li>
+                      <li><strong>One unfrozen final layer</strong> connected to 2 neurons for cat/dog classification</li>
+                      <li>Impressive results: <strong>~98% validation accuracy</strong></li>
+                    </ul><br>
+                    
+                    <p>I adapted this approach to my multi-class problem by:</p>
+                    <ul>
+                      <li>Keeping the <strong>frozen pre-trained layers</strong></li>
+                      <li>Adding a final trainable layer connected to <strong>5 neurons</strong> (one for each class)</li>
+                    </ul><br>
+                    
+                    <p>Here are the training results:</p>
+                    <div style="max-width: 80%; margin: 0 auto;">
+                      <img src="./assets/images/resnet50-pretrained-frozen.png" alt="Face Matching Process" class="img-responsive zoomable">
+                    </div>
+                    <p>
+                      The training results show the model <strong>avoided overfitting</strong>, but <strong>couldn't exceed 85% accuracy</strong> after <strong>4 hours of training</strong>. I later discovered this frozen approach works best with:
+                      <ul>
+                        <li>Small datasets</li>
+                        <li>Few classes (like binary classification)</li>
+                        <li>Limited computational resources</li>
+                      </ul><br>
+                      
+                      For my scenario with a <strong>large dataset, 5 distinct classes, and access to substantial computing power</strong>, freezing most layers was inefficient. <strong>The model could only train that single final layer, severely limiting its ability to learn the specific features needed for the classification task</strong>.
+                    </p>
+                  </li>
+                  <li>
+                    <h5>Transfer-learned Unfrozen Resnet-50 (<span style="color: #D3AF37; text-shadow: 0 0 5px rgba(255, 215, 0, 0.7), 0 0 10px rgba(255, 215, 0, 0.4); font-weight: bold;">Highest Accuracy</span>)</h5>
+                    <p>This time, I didnt freeze the pretrained layers. Here is the result:</p>
+                    <div style="max-width: 80%; margin: 0 auto;">
+                      <img src="./assets/images/resnet50-pretrained-unfrozen.png" alt="Face Matching Process" class="img-responsive zoomable">
+                    </div>
+                    <p>The test result shows that Transfer-learned Unfrozen Resnet-50 achieve ~99% in less than 1 hour of training. I decided to use this model type.</p>
+                  </li>
+                  <li>
+                    <h5>Xception Transfer Learning</h5>
+                    <p>I further searched deeper about transfer learning. I feel like the current method is not enough, I suspected that the previous model was overfitting. I found out that Xception is known to be used widely for transfer learning and fine tuning. Here is the result:</p>
+                    <div style="max-width: 80%; margin: 0 auto;">
+                      <img src="./assets/images/resnet50-xception.png" alt="Face Matching Process"
+                        class="img-responsive zoomable">
+                    </div>
+                    <p>I suspected that this model type was overfitting since the validation accuracy surpassed the training accuracy, albeit not significantly (only ~1%). Nevertheless, <strong>the model only reached an accuracy of ~95%, although it did so in less than 10 minutes of training</strong>. Hence, I decided to use the Transfer-learned Unfrozen Resnet-50 model.</p>
+                  </li>
+                </ol>
+            </div>
+            <div class="system-overview">
+              <h3>Application</h3>
+              <p>I further apply the model to an application. I used <strong>Tkinter</strong> for the user interface. I also decided to build an .exe with <strong>PyInstaller</strong> since this system is more likely to be used locally. I faced a problem here. The application requires Tensorflow library to run. Asking user to install Tensorflow and activate the corresponding virtual environment is not possible. Compiling the whole Tensorflow library inside the .exe is also not efficient. Hence, <strong>I decided to use Tensorflow Lite</strong>. Here is how the application looks like:</p>
+              <div style="max-width: 80%; margin: 0 auto;">
+                <img src="./assets/images/app1.png" alt="Face Matching Process" class="img-responsive zoomable">
+              </div>
+              <br>
+              <ol>
+                <li><strong>User is asked to choose a model</strong> used for the classification for flexibility,</li>
+                <li><strong>User is asked to choose a folder</strong> containing image that he/she wants to clean (classify). In this case, the folder shown on the right side of the image. The folder contains images with diverse classes.</li>
+                <li><strong>User is asked to choose the image classes/categories</strong> he/she wants to extract from the folder. In this case is <code>people</code> and <code>receipt</code>.</li>
+                <li><strong>User clicks Start Classification button</strong>.</li>
+              </ol>
+              <p>The cleaning process starts. The application moves all the images to folders corresponding to their classes. Later, user can recheck the content of the folders and delete it later.</p> Here is the result of the cleaning process:
+              <div style="max-width: 80%; margin: 0 auto;">
+                <img src="./assets/images/app3.png" alt="Face Matching Process" class="img-responsive zoomable">
+              </div>
+              <br>
+              <strong>The application does well in classifying both classes</strong>. Refer to the results below:
+              <br><br>
+              <div style="max-width: 80%; margin: 0 auto;">
+                <img src="./assets/images/app4.png" alt="Face Matching Process" class="img-responsive zoomable">
+              </div>
+            </div>
+
+            <div class="system-overview">
+              <h3>Lessons Learned and Notes</h3>
+              <p>From this project, I learned some valuable lessons:</p>
+              <ol>
+                <li>In order to evaluate a model, <strong>I have to really make sure that it is not overfitting.</strong></li>
+                <li>I found out that Resnet-50 model is too big and unefficient for this task. In future works, I am going to try smaller and much more efficient such as <strong>EfficientNet</strong>.</li>
+                <li><strong>The final model I trained only excels in classifying receipt and people</strong>. The accuracy of the model also drops when it is faced with real gallery images of the users. I suspect that this is because of data imbalance and lack of data variance. The model should be exposed to balanced and diverse datasets. In future works, I will improve the data preparation.</li>
+              </ol>
+              
+            </div>
+            
+            
+            <div class="system-overview">
+              <h3>Complete Source Code</h3>
+              <p>
+              <div class="text-center"></div>
+              <a href="https://github.com/royJuanAndika/Gallery-Cleaner" class="btn btn-primary" style="margin-bottom: 15px; margin-right: 15px;">
+                <i class="fa fa-github" style="margin-right: 8px;" aria-hidden="true"></i>
+                Source Code (GitHub)
+              </a>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/"
+              title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/"
+              title="Beautiful Free Images">Unsplash</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+
+      // Set up image modal functionality
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      const closeBtn = document.getElementsByClassName("close")[0];
+
+      // Get all zoomable images
+      const images = document.getElementsByClassName("zoomable");
+
+      // Add click event to all zoomable images
+      for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener("click", function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        });
+      }
+
+      // Close the modal when clicking the close button
+      closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+
+      // Close the modal when clicking outside the image
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+
+      // Close the modal with Escape key
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && modal.style.display === "block") {
+          modal.style.display = "none";
+        }
+      });
+    });
+
+    function changeTab(event, tabId) {
+      // Hide all content
+      const contents = document.getElementsByClassName("code-content");
+      for (let content of contents) {
+        content.classList.remove("active");
+      }
+
+      // Deactivate all tabs
+      const tabs = document.getElementsByClassName("code-tab");
+      for (let tab of tabs) {
+        tab.classList.remove("active");
+      }
+
+      // Activate clicked tab and its content
+      document.getElementById(tabId).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+  </script>
+
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+</body>
+
+</html>

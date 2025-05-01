@@ -75,6 +75,11 @@
       font-size: 12px;
     }
     
+    /* Fix for large gap between content and footer */
+    .section-container {
+      padding-bottom: 20px !important; /* Override default padding */
+    }
+    
     /* Image Modal Styles */
     .modal {
       display: none;
@@ -153,7 +158,7 @@
           <li><a href="./works.html" title="">Works</a></li>
           <li><a href="./about.html" title="">About me</a></li>
           <li><a href="./contact.html" title="">Contact</a></li>
-          <li><a href="./components.html" title="">Components</a></li>
+          <!-- <li><a href="./components.html" title="">Components</a></li> -->
         </ul>
 
 
@@ -175,7 +180,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <img src="./assets/images/work001-01.jpg" class="img-responsive zoomable" alt="">
+        <img src="./assets/images/work001-01.jpg" class="img-responsive" alt="">
         <div class="card-container">
           <div class="text-center">
             <h1 class="h2">001 : Thesis-bot</h1>
@@ -256,7 +261,7 @@
           <div class="system-overview">
             <h3>System Architecture</h3>
             <div class="col-xs-12">
-                <div style="max-width: 60%; margin: 0 auto;">
+                <div style="max-width: 60%; margin: 0 auto; padding-bottom: 5%;">
                 <img src="./assets/images/thesisbot-architecture.png" alt="Thesis Bot Architecture" class="img-responsive zoomable">
                 </div>
                 <p>The system architecture implements an <span style="font-weight: bold;">agentic design pattern framework</span> optimized for efficient data retrieval and minimal hallucination. The <span style="font-weight: bold;">Master Bot</span> functions as a central mediator (<span style="font-weight: bold;">Mediator Pattern</span>), analyzing user queries with Llama 3.2 to determine which specialized worker agents should handle the request. Each worker agent specializes in a specific domain:</p>
@@ -647,10 +652,26 @@ Berikut adalah informasi yang kamu dapatkan:
               </code></pre>
             </div>
           </div>
+          <div class="system-overview">
+            <h3>Complete Source Code and Proposed Paper</h3>
+            <p>
+                <div class="text-center"></div>
+                  <a href="https://github.com/C14220245/Ollama-LLM-Skripsi" class="btn btn-primary" style="margin-bottom: 15px; margin-right: 15px;">
+                    <i class="fa fa-github" style="margin-right: 8px;" aria-hidden="true"></i>
+                    Project GitHub Repository
+                  </a>
+
+                  <a href="https://docs.google.com/document/d/1ztshfEltVkQgTRSf7hwpVISv4hz6tjc4/edit?usp=sharing&ouid=110926352258454006302&rtpof=true&sd=true" class="btn btn-primary" style="margin-bottom: 15px; margin-right: 15px;">
+                    <i class="fa fa-file-text" style="margin-right: 8px;" aria-hidden="true"></i>
+                    Proposed Paper
+                  </a>
+                </div>
+            </p>
+          </div>
 
         </div>
       </div>
-
+      
       <!-- <div class="col-xs-12">
         <img src="./assets/images/work001-04.jpg" class="img-responsive" alt="">
       </div> -->

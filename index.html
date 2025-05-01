@@ -23,12 +23,44 @@
     #introduction {
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
+      margin: 0px;
     }
     
     /* More specific selector to override the CSS in main.3f6952e4.css */
     #introduction h1 {
       font-family: 'Montserrat', sans-serif !important;
       font-weight: 800 !important;
+      margin: 0px;
+    }
+    
+    /* Target the typed element and its children */
+    #typed, .typed-cursor, #typed-strings span {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 800 !important;
+    }
+    
+    /* Add font-display for better loading behavior */
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.woff2) format('woff2');
+    }
+    
+    /* Add custom styling for the button to make the outline visible */
+    .btn-default {
+      border-color: white !important;
+      border-width: 2px !important;
+      color: white !important;
+    }
+    
+    .btn-default:hover {
+      background-color: white !important;
+      color: black !important;
+    }
+    .Welcome {
+      padding-left: 2px;
     }
   </style>
 
@@ -53,16 +85,14 @@
           <span class="icon-bar"></span>
         </button>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">Home</a></li>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html" title="" class="">Home</a></li>
           <li><a href="./works.html" title="">Works</a></li>
           <li><a href="./about.html" title="">About me</a></li>
           <li><a href="./contact.html" title="">Contact</a></li>
           <li><a href="./components.html" title="">Components</a></li>
         </ul>
-
-
       </div> 
     </div>
   </nav>
@@ -73,16 +103,21 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="hero-full-wrapper">
-            <div class="text-content" id="introduction">
-              <h1><br>
+            <div class="text-content">
+              <h1 id="introduction">
                 <span id="typed-strings">
-                  <span>Hi, I'm Roy</span>
-                  <span>6th semester <br>undergraduate<br>in Computer <br>Science </span>
-                  <span></span>
+                  <span>Hi.</span>
+                  <span>I'm Roy</span>
                 </span>
                 <span id="typed"></span>
               </h1>
-              <h2 class="">Welcome!</h2>
+              <h3 class="Welcome">6th semester undergraduate in Computer Science </h3>
+
+              <!-- <h2 class="Welcome">Welcome!</h2> <br> -->
+              <!-- <br> -->
+              <!-- <div class="container"> -->
+              <a href="./works.html" title="See my works" class="btn btn-default btn-lg out">See my works</a>
+              <!-- </div> -->
             </div>
           </div>
         </div>

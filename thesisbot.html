@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+  
+  <!-- Add syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- Custom styles for code display -->
+  <style>
+    .code-container {
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+    .code-tabs {
+      display: flex;
+      background-color: #333;
+    }
+    .code-tab {
+      padding: 10px 15px;
+      color: #ccc;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+    }
+    .code-tab.active {
+      background-color: #1e1e1e;
+      color: white;
+      border-bottom: 2px solid #4285f4;
+    }
+    .code-content {
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+    .code-content.active {
+      display: block;
+    }
+    pre {
+      margin: 0;
+      padding: 15px;
+      background-color: #1e1e1e;
+      border-radius: 0;
+      overflow-x: auto;
+    }
+    code {
+      font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+      font-size: 14px;
+    }
+    .system-overview {
+      margin-bottom: 30px;
+    }
+    .tech-badge {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px;
+      background-color: #0078d7;
+      color: white;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+    
+    /* Image Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: auto;
+      transition: opacity 0.3s ease;
+    }
+    
+    .modal-content {
+      display: block;
+      position: relative;
+      margin: auto;
+      max-width: 90%;
+      max-height: 90vh;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+      z-index: 1001;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .zoomable {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    
+    .zoomable:hover {
+      transform: scale(1.02);
+    }
+  </style>
+
+  <title>Works - Thesis Bot</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+          <li><a href="./index.html" title="">Home</a></li>
+          <li><a href="./works.html" title="">Works</a></li>
+          <li><a href="./about.html" title="">About me</a></li>
+          <li><a href="./contact.html" title="">Contact</a></li>
+          <li><a href="./components.html" title="">Components</a></li>
+        </ul>
+
+
+          <!-- <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a href="./index.html" title="" class="active">001</a></li>
+            <li><a href="./index.html" title="">002</a></li>
+            <li><a href="./index.html" title="">003</a></li>
+            <li><a href="./index.html" title="">004</a></li>
+            <li><a href="./index.html" title="">005</a></li>
+            <li><a href="./index.html" title="">006</a></li>
+          </ul> -->
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="./assets/images/work001-01.jpg" class="img-responsive zoomable" alt="">
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">001 : Thesis-bot</h1>
+          </div>
+          <p>A chatbot that helps students in their thesis authoring, utilizing <span style="font-weight: bold;">Retrieval Augmented Generation(RAG)</span> with <span style="font-weight: bold;">Agentic Architecture</span>. This project was proposed as the <span style="font-weight: bold;">Generative Artificial Intelligence Coursework.</span></p>
+          <h3>Overview</h3>
+          <p>The main issue in the effectiveness of faculty thesis coordinator responses to students working on their theses is
+            the
+            professors' busy schedules and the high volume of questions asked. To address this issue, a thesis chatbot was
+            developed as a solution that can help partially replace the role of
+            lecturers in providing guidance related to the selection of <span style="font-weight: bold;">thesis
+              supervisors</span>, <span style="font-weight: bold;">the thesis process</span>, <span
+              style="font-weight: bold;">thesis defense schedules</span>, and even <span style="font-weight: bold;">thesis topic
+              recommendations</span>. <br><br>
+          
+            The thesis chatbot uses the <span style="font-weight: bold;">Retrieval-Augmented Generation (RAG)</span> method to
+            generate answers based on relevant
+            information sourced from external sources, such as Google Spreadsheets and Qdrant. Additionally, the <span
+              style="font-weight: bold;">Large Language Model (LLM)</span> technology with a neural network concept is used to
+            support natural language processing capabilities. The
+            <span style="font-weight: bold;">Embedding Model</span> system is applied to convert text into vectors so that it can
+            be read by RAG. This chatbot also adopts
+            an <span style="font-weight: bold;">agentic system</span>, where each agent is tasked with processing specific
+            documents according to their assigned duties.<br><br>
+          
+            The test results show that several models, such as <span style="font-weight: bold;">Llama 3.2</span> and <span style="font-weight: bold;">Llama 3.1:8b-instruct-q5_1</span>, provide efficient
+            performance. With the combination of <span style="font-weight: bold;">RAG methods</span>, <span
+              style="font-weight: bold;">LLM</span>, <span style="font-weight: bold;">Embedding Model</span>, and an <span
+              style="font-weight: bold;">agentic system</span>, the thesis chatbot can
+            operate effectively and efficiently. This chatbot is expected to be a useful tool for students at <span style="font-weight: bold;">Petra Christian
+            University</span> in supporting their thesis work. Currently, the thesis chatbot has been implemented on the private server
+            of the university.
+          </p>
+          
+          <div class="system-overview">
+            <h3>Technology Stack</h3>
+            <div>
+              <span class="tech-badge">Streamlit</span>
+              <span class="tech-badge">Ollama (Llama 3.2)</span>
+              <span class="tech-badge">RAG</span>
+              <span class="tech-badge">Qdrant</span>
+              <span class="tech-badge">FastEmbed</span>
+              <span class="tech-badge">Google Sheets API</span>
+              <span class="tech-badge">Python</span>
+            </div>
+          </div>
+
+          <div class="system-overview">
+            <h3>Data Preprocessing</h3>
+            <p>High-quality data is crucial for the Thesis Bot's performance. The preprocessing workflow transforms raw data into vector embeddings stored in Qdrant cloud database:</p>
+            
+            <h4>1. Professor Data Processing</h4>
+            <div class="col-xs-12">
+              <div style="max-width: 50%; margin: 0 auto;">
+              <img src="./assets/images/data_dosen.png" alt="Professor Data Preprocessing Flow" class="img-responsive zoomable">
+              </div>
+              <p>The system collects professor data through Google Sheets API, including name, contact info, and research expertise. For expertise identification, Llama 3.2 analyzes professor publications to extract relevant expertise keywords. The algorithm ranks these keywords by frequency, selecting the most common ones as the professor's expertise domains. This processed data is stored in <code>data_dosen.txt</code> for efficient retrieval.</p>
+            </div>
+            
+            <h4>2. Professor Reviews Processing</h4>
+            <p>Student reviews of professors are collected through Google Forms and integrated into Google Sheets. Each review undergoes summarization by Llama 3.2 to extract key patterns in teaching and supervision styles. This provides better context about each professor's mentoring approach. The summarized reviews are stored in <code>data_review_dosen.txt</code>.</p>
+            
+            <h4>3. Thesis Guidelines Processing</h4>
+            <p>Thesis guidelines, schedules, and requirements are stored in Google Docs for easy updates by thesis coordinators. The system accesses this information through Google Docs API and formats it appropriately in <code>data_panduan_dosen.txt</code>.</p>
+            
+            <h4>4. Vector Embedding</h4>
+            <div style="max-width: 50%; margin: 0 auto;">
+              <img src="./assets/images/vector.png" alt="Professor Data Preprocessing Flow" class="img-responsive zoomable">
+            </div>
+            <p>After text preprocessing, the system converts all textual data into numerical vectors using different embedding models:</p>
+            <ul>
+              <li><strong>FastEmbedEmbeddings with jinaai/jina-embeddings-v2-base-en</strong>: Used for professor data that requires higher accuracy with complex information</li>
+              <li><strong>NomicOllamaEmbedding</strong>: Used for thesis guidelines where faster processing is needed with acceptable accuracy</li>
+            </ul>
+            <p>These vectors are stored in Qdrant cloud database, enabling efficient similarity search when responding to user queries.</p>
+          </div>
+
+          <div class="system-overview">
+            <h3>System Architecture</h3>
+            <div class="col-xs-12">
+                <div style="max-width: 60%; margin: 0 auto;">
+                <img src="./assets/images/thesisbot-architecture.png" alt="Thesis Bot Architecture" class="img-responsive zoomable">
+                </div>
+                <p>The system architecture implements an <span style="font-weight: bold;">agentic design pattern framework</span> optimized for efficient data retrieval and minimal hallucination. The <span style="font-weight: bold;">Master Bot</span> functions as a central mediator (<span style="font-weight: bold;">Mediator Pattern</span>), analyzing user queries with Llama 3.2 to determine which specialized worker agents should handle the request. Each worker agent specializes in a specific domain:</p>
+                
+                <ul>
+                    <li><span style="font-weight: bold;">DosenBot:</span> Manages professor information and expertise</li>
+                    <li><span style="font-weight: bold;">SkripsiBot:</span> Handles thesis guidelines and processes</li>
+                    <li><span style="font-weight: bold;">ReviewDosenBot:</span> Provides professor reviews and mentoring styles (due to irrelevance, ommmited in the final version)</li>
+                </ul>
+                
+                <p>Worker agents utilize different embedding models based on their data characteristics:</p>
+                
+                <ul>
+                    <li><span style="font-weight: bold;">FastEmbedEmbeddings with jinaai/jina-embeddings-v2-base-en:</span> Used for complex professor data (achieving 90% accuracy on complex queries)</li>
+                    <li><span style="font-weight: bold;">NomicOllamaEmbedding:</span> Applied for thesis guidelines (processing in ~5 seconds vs 15+ seconds with FastEmbed)</li>
+                </ul>
+                
+                <p>This strategic embedding selection creates an optimal balance between speed and accuracy for different query types.</p>
+                
+                <p>The query flow follows a <span style="font-weight: bold;">Chain of Responsibility Pattern</span>:</p>
+                
+                <ol>
+                    <li>User submits query to Master Bot</li>
+                    <li>Master Bot analyzes and routes to appropriate worker agents</li>
+                    <li>Worker agents execute RAG against domain-specific vector databases</li>
+                    <li>SummarizerBot uses <span style="font-weight: bold;">Composite Pattern</span> to consolidate all responses</li>
+                </ol>
+                
+                <p>This architecture successfully reduces hallucination through the retrieval of verified information while maintaining response efficiency, with tests showing .txt files process approximately twice as fast as CSV files during embedding.</p>
+            </div>
+
+          </div>
+
+          <div class="system-overview">
+            <h3>App Demo</h3>
+            <div class="col-xs-12">
+              <img src="./assets/images/1.png" class="img-responsive zoomable" alt="">
+              <p><span style="font-weight: bold;">User sends a prompt to the system</span>. Master bot receives the prompt and determines which worker agents are relevant to the prompt. <span style="font-weight: bold;">Master agent passes and assign the prompt to the chosen worker agents.</span>In this case, Dosenbot and Skripsibot are assigned the task. <span style="font-weight: bold;">Skripsibot's response is shown above</span></p> 
+            </div>
+            <div class="col-xs-12">
+              <img src="./assets/images/2.png" class="img-responsive zoomable" alt="">
+              <p><span style="font-weight: bold;">Dosenbot receives the prompt and generate the response based on the context documents it is responsible of.</span> The response are shown above.</p>
+            </div>
+
+            <div class="col-xs-12">
+              <img src="./assets/images/3.png" class="img-responsive zoomable" alt="">
+              <p>Summarizerbot receives the response from the other 2 bots concatenated into one prompt.<span style="font-weight: bold;"> Summarizerbot summarizes these response into the final response</span>. This final response is the one shown to user.</p>
+            </div>
+          </div>
+
+          <!-- <div class="container col-md-12 col-md-offset-0 section-container-spacer">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <img src="./assets/images/work001-02.jpg" class="img-responsive" alt="">
+                <p>Menphis skyline</p>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <img src="./assets/images/work001-03.jpg" class="img-responsive" alt="">
+                <p>Menphis skyline</p>
+              </div>
+            </div>
+          </div> -->
+          
+          <div class="system-overview">
+            <h3>Major Project Code</h3>
+            <p>ThesisBot uses an agentic architecture with a Master Bot controlling several specialized worker bots, each responsible for a specific domain of thesis-related information.</p>
+          </div>
+
+          <div class="code-container">
+            <div class="code-tabs">
+              <div class="code-tab active" onclick="changeTab(event, 'main')">Main App</div>
+              <div class="code-tab" onclick="changeTab(event, 'master-bot')">Master Agent</div>
+              <div class="code-tab" onclick="changeTab(event, 'supporting-agents')">Worker Agents (2)</div>
+              <div class="code-tab" onclick="changeTab(event, 'summarizer-bot')">Summarizer Agent</div>
+            </div>
+            
+            <div id="main" class="code-content active">
+              <pre><code class="language-python">
+# Functions to handle chat history persistence
+def save_chat_history(messages):
+    with open(CHAT_HISTORY_FILE, "w") as file:
+        json.dump(messages, file)
+
+def load_chat_history():
+    if os.path.exists(CHAT_HISTORY_FILE):
+        with open(CHAT_HISTORY_FILE, "r") as file:
+            return json.load(file)
+    return []  # Return empty list if no history is found
+
+# Main Program
+st.title("Master Agent Skripsi QueryBot")
+
+# Initialize chat history or load from file
+if "messages" not in st.session_state:
+    st.session_state.messages = load_chat_history()  # Load chat history from file on page load
+
+# Display chat messages from history on app rerun
+for message in st.session_state.messages:
+    # with st.chat_message(message["role"]):
+    #     st.markdown(message["content"])
+    if(message["role"] == "assistant"):
+        with st.chat_message("assistant", avatar="./chatbot.png"):
+            st.markdown(message["content"])
+    if(message["role"] == "user"):
+        with st.chat_message("user", avatar="./person.jpg"):
+            st.markdown(message["content"])
+
+# Save chat history
+def add_message(role, content):
+    st.session_state.messages.append({"role": role, "content": content})
+    save_chat_history(st.session_state.messages)  # Save history to file
+
+chatbot = Chatbot()
+skripsiBot = SkripsiBot()
+dosenBot = DosenBot()
+summarizeBot = SummarizeBot()
+chatbot.set_chat_history(st.session_state.messages)
+
+# React to user input
+if prompt := st.chat_input("What is up?"):
+    unsum_resp = ""
+    tools_used = "tools used:"
+    # Display user message in chat message container
+    with st.chat_message("user", avatar="./person.jpg"):
+        st.markdown(prompt)
+    add_message("user", prompt)  # Save user message
+
+    # Get AI response
+    with st.chat_message("assistant", avatar="./chatbot.png"):
+        full_prompt = f"{system_prompt}\nMahasiswa: {prompt}\nBudiAI:"
+        response = chatbot.run_llama(full_prompt)
+        if(response.__contains__("skripsiBot") or response.__contains__("dosenBot") or response.__contains__("publikasiBot") or response.__contains__("SkripsiBot") or response.__contains__("DosenBot") or response.__contains__("PublikasiBot")):
+            if(response.__contains__("skripsiBot") or response.__contains__("SkripsiBot")):
+                skripsiBotResp = skripsiBot.chat_engine.chat(prompt)
+                unsum_resp+="\n"+"skripsiBot Response:"+skripsiBotResp.response
+                tools_used+="SkripsiBot\n"
+            if(response.__contains__("dosenBot") or response.__contains__("DosenBot")):
+                dosenBotResp = dosenBot.chat_engine.chat(prompt)
+                unsum_resp+="\n"+"dosenBot Response:"+dosenBotResp.response
+                tools_used+="dosenBot\n"
+            summ_prompt = f"{summarizer_prompt}\n Pertanyaan mahasiswa: {prompt} informasi dari bot lain: {unsum_resp}\nSummarizerBot:"
+            final_resp = summarizeBot.run_llama(summ_prompt)
+        else:
+            final_resp = response
+            tools_used+="None"
+        st.markdown(unsum_resp+"\n"+"Final Response:"+"\n"+final_resp+"\n"+tools_used)
+    add_message("assistant", unsum_resp+"\n"+"Final Response:"+"\n"+final_resp+"\n"+tools_used)  # Save assistant response
+
+st.sidebar.header("Control Point")
+redirect_to_home = False
+              </code></pre>
+            </div>
+            
+            <div id="master-bot" class="code-content">
+              <pre><code class="language-python">
+class Chatbot:
+    def __init__(self, llm="llama3.2:latest"):
+        self.llm = llm
+        self.memory = self.create_memory()
+
+    def run_llama(self, prompt):
+        result = subprocess.run(['ollama', 'run', self.llm, prompt], capture_output=True, text=True)
+        return result.stdout
+
+    def set_chat_history(self, messages):
+        self.chat_history = [ChatMessage(role=message["role"], content=message["content"]) for message in messages]
+        self.chat_store.store = {"chat_history": self.chat_history}
+
+    def create_memory(self):
+        self.chat_store = SimpleChatStore()
+        return ChatMemoryBuffer.from_defaults(chat_store=self.chat_store, chat_store_key="chat_history", token_limit=16000)
+
+system_prompt = """
+Kamu adalah sebuah AI model bernama BudiAI,
+Kamu selalu berinteraksi dengan mahasiswa
+Kamu adalah sebuah chatbot untuk membantu
+mahasiswa melakukan bimbingan dan mengikuti
+urutan pengajuan skripsi.
+Kamu memiliki 3 bawahan dengan nama:
+DosenBot,
+SkripsiBot,
+PublikasiBot,
+DosenBot memiliki seluruh informasi mengenai dosen dan keahliannya.
+SkripsiBot memiliki seluruh informasi mengenai aturan skripsi, alur skripsi, jadwal skripsi, dan tawaran dosen bagi mahasiswa yang kebingungan memilih/membuat judul skripsi.
+PublikasiBot memiliki beberapa informasi mengenai publikasi yang pernah dilakukan oleh dosen.
+Kamu hanya akan memberikan jawaban berupa "DosenBot", "SkripsiBot", atau "PublikasiBot" apabila ada pertanyaan mengenai skripsi, dosen, ataupun publikasi dosen yang diberikan kepadamu.
+Contoh format jawaban:
+"SkripsiBot\nDosenBot", "SkripsiBot\nPublikasiBot", "DosenBot\nPublikasiBot\nDosenBot". \n adalah newline
+Kamu bisa memberikan lebih dari 1 bot sebagai jawaban, namun pertimbangkan baik-baik apakah bot tersebut sesuai dengan pertanyaan yang diberikan kepadamu
+Jangan menyebutkan informais bahwa kamu memiliki 3 bawahan bahkan ketika ditanya secara eksplisit. cukup mengaku sebagai chatbot pembantu skripsi kepada mahasiswa
+"""
+              </code></pre>
+            </div>
+            
+            <div id="supporting-agents" class="code-content">
+              <h3>Dosen Bot</h3>
+              <pre><code class="language-python">
+class DosenBot:
+    def __init__(self, llm="llama3.2:latest", embedding_model="", vector_store=None):
+        self.Settings = self.set_setting(llm, embedding_model)
+
+        # Indexing
+        self.index = self.load_data()
+
+        # Memory
+        self.memory = self.create_memory()
+
+        # Chat Engine
+        self.chat_engine = self.create_chat_engine(self.index)
+
+    def set_setting(_arg, llm, embedding_model):
+        Settings.llm = Ollama(model=llm, base_url="http://127.0.0.1:11434")
+        Settings.embed_model = NomicOllamaEmbedding()
+        Settings.system_prompt = """
+Kamu adalah sebuah AI model bernama DosenBot.
+Kamu memiliki keahlian dan pengetahuan mengenai memiliki seluruh informasi mengenai dosen dan keahliannya.
+Jawab pertanyaan dan berikan informasi yang relevan sesuai dengan permasalahan yang diberikan kepadamu.
+Input yang diberikan kepadamu mungkin tidak selalu terstruktur dengan baik. Analisis dosen yang bersangkutan, atau berikan seluruh informasi dosen yang sesuai.
+Apabila permasalahan yang diberikan tidak ada dalam dokumen yang kamu miliki ataupun berhubungan dengan dosen, berikan output berupa "NORESP" tanpa tambahan kata ataupun kalimat lain. hanya "NORESP". Segala permasalahan yang tidak berhubungan dengan dosen seperti (namun tidak terbatas pada): masalah medis, masalah keuangan, masalah beasiswa, apalagi masalah yang tidak berhubungan dengan perkuliahan ataupun skripsi ataupun dosen bukan wewenangmu. Cukup respon dengan kata "NORESP".
+Format: Berikan jawaban yang sesuai atau "NORESP"."""
+        return Settings
+
+    @st.cache_resource(show_spinner=True)
+    def load_data(_arg, vector_store=None):
+        with st.spinner(text="Sedang memuat informasi dosen, sabar yaa."):
+            reader = SimpleDirectoryReader(input_dir="./Agentic_RAG/sp/dosen", recursive=True)
+            documents = list(reader.load_data())
+            
+            # Initialize the splitter with chunk size and overlap
+            tokenizerModel = AutoTokenizer.from_pretrained("nomic-ai/nomic-embed-text-v1.5")
+            token_splitter = TokenTextSplitter(chunk_size=512, chunk_overlap=64, backup_separators=["\n\n"], tokenizer=tokenizerModel)
+            split_documents = [token_splitter.split_text(doc.text) for doc in documents]
+            
+            # Flatten the list of chunks into individual segments
+            all_segments = []
+            for chunks in split_documents:
+                all_segments.extend(chunks)
+            
+            # Load Hugging Face tokenizer
+            
+            # Generate embeddings for each segment
+            embedder = NomicOllamaEmbedding()
+            all_embeddings = Settings.embed_model._get_text_embeddings(all_segments)
+            
+        # Set up Qdrant collection and client if no vector store is provided
+        if vector_store is None:
+            client = QdrantClient(
+                url=st.secrets["qdrant"]["connection_url"], 
+                api_key=st.secrets["qdrant"]["api_key"],
+            )
+            vector_store = QdrantVectorStore(client=client, collection_name="Agentic_Dosen")
+            storage_context = StorageContext.from_defaults(vector_store=vector_store)
+            index = VectorStoreIndex.from_documents(documents, storage_context=storage_context)
+        return index
+        
+    def set_chat_history(self, messages):
+        self.chat_history = [ChatMessage(role=message["role"], content=message["content"]) for message in messages]
+        self.chat_store.store = {"chat_history": self.chat_history}
+
+    def create_memory(self):
+        self.chat_store = SimpleChatStore()
+        return ChatMemoryBuffer.from_defaults(chat_store=self.chat_store, chat_store_key="chat_history", token_limit=16000)
+
+    def create_chat_engine(self, index):
+        return CondensePlusContextChatEngine(
+            verbose=True,
+            memory=self.memory,
+            retriever=index.as_retriever(verbose=True),
+            llm=Settings.llm
+        )
+              </code></pre>
+              <h3>Alur Skripsi Bot</h3>
+              <pre><code class="language-python">
+class SkripsiBot:
+    def __init__(self, llm="llama3.2:latest", embedding_model="", vector_store=None):
+        self.Settings = self.set_setting(llm, embedding_model)
+
+        # Indexing
+        self.index = self.load_data()
+
+        # Memory
+        self.memory = self.create_memory()
+
+        # Chat Engine
+        self.chat_engine = self.create_chat_engine(self.index)
+
+    def set_setting(_arg, llm, embedding_model):
+        Settings.llm = Ollama(model=llm, base_url="http://127.0.0.1:11434")
+        Settings.embed_model = NomicOllamaEmbedding()
+        Settings.system_prompt = """
+Kamu adalah sebuah AI model bernama SkripsiBot.
+Kamu memiliki keahlian dan pengetahuan mengenai alur skripsi, alur skripsi, jadwal skripsi, dan tawaran dosen bagi mahasiswa yang kebingungan memilih/membuat judul skripsi.
+Jawab pertanyaan dan berikan informasi yang relevan sesuai dengan permasalahan yang diberikan kepadamu.
+Input yang diberikan kepadamu mungkin tidak selalu terstruktur dengan baik. Analisis permasalahan yang bersangkutan, atau berikan seluruh informasi yang dirasa sesuai.
+Apabila permasalahan yang diberikan tidak ada dalam dokumen yang kamu miliki, berikan output berupa "NORESP" tanpa tambahan kata ataupun kalimat lain. hanya "NORESP". Segala permasalahan yang tidak berhubungan dengan dosen seperti (namun tidak terbatas pada): masalah medis, masalah keuangan, masalah beasiswa, apalagi masalah yang tidak berhubungan dengan perkuliahan ataupun skripsi ataupun dosen bukan wewenangmu. Cukup respon dengan kata "NORESP".
+Format: Berikan jawaban yang sesuai dan sertakan URL link apabila tersedia dalam dokumen yang kamu miliki atau "NORESP"
+JANGAN PERNAH MENYEBUT NAMA FILE ATAUPUN FILE PATH SECARA EXPLICIT."""
+        return Settings
+
+    @st.cache_resource(show_spinner=True)
+    def load_data(_arg, vector_store=None):
+        with st.spinner(text="Sedang memuat, sabar yaa."):
+            reader = SimpleDirectoryReader(input_dir="./Agentic_RAG/sp/skripsi", recursive=True)
+            documents = list(reader.load_data())
+            
+            # Initialize the splitter with chunk size and overlap
+            tokenizerModel = AutoTokenizer.from_pretrained("nomic-ai/nomic-embed-text-v1.5")
+            token_splitter = TokenTextSplitter(chunk_size=512, chunk_overlap=64, backup_separators=["\n\n"], tokenizer=tokenizerModel)
+            split_documents = [token_splitter.split_text(doc.text) for doc in documents]
+            
+            # Flatten the list of chunks into individual segments
+            all_segments = []
+            for chunks in split_documents:
+                all_segments.extend(chunks)
+            
+            # Load Hugging Face tokenizer
+            
+            # Generate embeddings for each segment
+            embedder = NomicOllamaEmbedding()
+            all_embeddings = Settings.embed_model._get_text_embeddings(all_segments)
+            
+        # Set up Qdrant collection and client if no vector store is provided
+        if vector_store is None:
+            client = QdrantClient(
+                url=st.secrets["qdrant"]["connection_url"], 
+                api_key=st.secrets["qdrant"]["api_key"],
+            )
+            vector_store = QdrantVectorStore(client=client, collection_name="Agentic_Alur")
+            storage_context = StorageContext.from_defaults(vector_store=vector_store)
+            index = VectorStoreIndex.from_documents(documents, storage_context=storage_context)
+        return index
+        
+    def set_chat_history(self, messages):
+        self.chat_history = [ChatMessage(role=message["role"], content=message["content"]) for message in messages]
+        self.chat_store.store = {"chat_history": self.chat_history}
+
+    def create_memory(self):
+        self.chat_store = SimpleChatStore()
+        return ChatMemoryBuffer.from_defaults(chat_store=self.chat_store, chat_store_key="chat_history", token_limit=16000)
+
+    def create_chat_engine(self, index):
+        return CondensePlusContextChatEngine(
+            verbose=True,
+            memory=self.memory,
+            retriever=index.as_retriever(verbose=True),
+            llm=Settings.llm
+        )
+              </code></pre>
+            </div>
+            
+            <div id="summarizer-bot" class="code-content">
+              <pre><code class="language-python">
+class SummarizeBot:
+def __init__(self, llm="llama3.1:8b-instruct-q5_1"):
+self.llm = llm
+self.memory = self.create_memory()
+
+def run_llama(self, prompt):
+result = subprocess.run(['ollama', 'run', self.llm, prompt], capture_output=True, text=True)
+return result.stdout
+
+def set_chat_history(self, messages):
+self.chat_history = [ChatMessage(role=message["role"], content=message["content"]) for message in messages]
+self.chat_store.store = {"chat_history": self.chat_history}
+
+def create_memory(self):
+self.chat_store = SimpleChatStore()
+return ChatMemoryBuffer.from_defaults(chat_store=self.chat_store, chat_store_key="chat_history", token_limit=16000)
+
+summarizer_prompt = """
+Kamu adalah sebuah AI model bernama SummarizerBot,
+Kamu adalah ahli dalam membuat kesimpulan dari informasi yang ada.
+Kamu bisa menerima hingga 3 input dari:
+DosenBot,
+SkripsiBot,
+PublikasiBot,
+DosenBot memiliki seluruh informasi mengenai dosen dan keahliannya.
+SkripsiBot memiliki seluruh informasi mengenai aturan skripsi, alur skripsi, jadwal skripsi, dan tawaran dosen bagi
+mahasiswa yang kebingungan memilih/membuat judul skripsi.
+PublikasiBot memiliki beberapa informasi mengenai publikasi yang pernah dilakukan oleh dosen.
+Kamu akan memberikan jawaban berupa hasil kesimpulan dari informasi yang ada. Jangan hiraukan tulisan skripsiBot,
+dosenBot, ataupun publikasiBot apabila ada.
+Berikan hasil kesimpulannya saja. Sertakan url link HANYA apabila diberikan dari bot lainnya, anda tidak memiliki
+wewenang untuk generate link
+
+Berikut adalah informasi yang kamu dapatkan:
+"""
+              </code></pre>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <div class="col-xs-12">
+        <img src="./assets/images/work001-04.jpg" class="img-responsive" alt="">
+      </div> -->
+
+    </div>
+  </div>
+</div>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     navActivePage();
+     
+     // Set up image modal functionality
+     const modal = document.getElementById("imageModal");
+     const modalImg = document.getElementById("modalImage");
+     const closeBtn = document.getElementsByClassName("close")[0];
+     
+     // Get all zoomable images
+     const images = document.getElementsByClassName("zoomable");
+     
+     // Add click event to all zoomable images
+     for (let i = 0; i < images.length; i++) {
+       images[i].addEventListener("click", function() {
+         modal.style.display = "block";
+         modalImg.src = this.src;
+       });
+     }
+     
+     // Close the modal when clicking the close button
+     closeBtn.addEventListener("click", function() {
+       modal.style.display = "none";
+     });
+     
+     // Close the modal when clicking outside the image
+     modal.addEventListener("click", function(event) {
+       if (event.target === modal) {
+         modal.style.display = "none";
+       }
+     });
+     
+     // Close the modal with Escape key
+     document.addEventListener("keydown", function(event) {
+       if (event.key === "Escape" && modal.style.display === "block") {
+         modal.style.display = "none";
+       }
+     });
+  });
+  
+  function changeTab(event, tabId) {
+    // Hide all content
+    const contents = document.getElementsByClassName("code-content");
+    for (let content of contents) {
+      content.classList.remove("active");
+    }
+    
+    // Deactivate all tabs
+    const tabs = document.getElementsByClassName("code-tab");
+    for (let tab of tabs) {
+      tab.classList.remove("active");
+    }
+    
+    // Activate clicked tab and its content
+    document.getElementById(tabId).classList.add("active");
+    event.currentTarget.classList.add("active");
+  }
+</script>
+
+<script type="text/javascript" src="./main.70a66962.js"></script></body>
+
+</html>
